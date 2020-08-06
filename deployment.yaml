@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: prod-deployment
+  name: production
   labels:
     app: nginx
 spec:
@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: prod
+  name: production
 spec:
   selector:
     app: nginx
